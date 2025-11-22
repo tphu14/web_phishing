@@ -1,0 +1,16 @@
+numpy
+pandas
+scikit-learn
+
+xgboost
+lightgbm
+catboost
+tensorflow
+imbalanced-learn
+tldextract
+requests
+beautifulsoup4
+streamlit
+plotly
+streamlit-option-menu
+python-dotenv
