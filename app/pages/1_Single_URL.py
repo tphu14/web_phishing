@@ -40,8 +40,8 @@ st.success("✅ Models đã sẵn sàng!")
 with st.sidebar:
     st.header("📝 URL mẫu")
     examples = {
-        "Safe": "rabble.ca/babble/national-news/dmitri-soudas-falls-radio-canada-facebook-hoaxsters",
-        "Safe": "thewhiskeydregs.com/wp-content/themes/widescreen/includes/temp/promocoessmiles/?84784787824HDJNDJDSJSHD//2724782784/",
+        "Safe example 1": "rabble.ca/babble/national-news/dmitri-soudas-falls-radio-canada-facebook-hoaxsters",
+        "Safe example 2": "thewhiskeydregs.com/wp-content/themes/widescreen/includes/temp/promocoessmiles/?84784787824HDJNDJDSJSHD//2724782784/",
         "Phishing example 1": "https://id144247.webhosting.optonline.net/~m4d1/inc/costumer/",
         "Phishing example 2": "https://www.google.ro/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0CD0QFjAEahUKEwj8ueqQ45HIAhXFQBQKHcPFAvk&url=https%3A%2F%2Fwww.rbsdigital.com%2F&usg=AFQjCNHQHOrLeA_8uqToEYDFCxjJWEzy_A",
     }
