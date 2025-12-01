@@ -1,5 +1,5 @@
 """
-Trang phân tích hàng loạt
+Trang phân tích hàng loạt - Chỉ cho Admin
 """
 
 import streamlit as st
@@ -13,12 +13,23 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 from src.predictor import PhishingPredictor
 from app.components import render_header, render_footer
 from app.styles import apply_custom_css
+from app.auth import is_authenticated
 
 st.set_page_config(page_title="Batch Analysis", page_icon="📊", layout="wide")
 apply_custom_css()
 render_header()
 
 st.title("📊 Phân tích hàng loạt")
+
+# Check authentication
+if not is_authenticated():
+    st.warning("🔒 Tính năng này chỉ dành cho Admin")
+    st.info("Vui lòng đăng nhập để sử dụng tính năng này")
+    
+    if st.button("🔐 Login", use_container_width=True):
+        st.switch_page("pages/4_Admin.py")
+    
+    st.stop()
 
 # Load predictor
 @st.cache_resource
