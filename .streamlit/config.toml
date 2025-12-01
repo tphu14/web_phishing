@@ -1,0 +1,25 @@
+[client]
+# Ẩn menu hamburger
+showSidebarNavigation = true
+
+[server]
+# Server settings
+headless = true
+port = 8501
+
+[theme]
+# Theme customization
+primaryColor = "#667eea"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[browser]
+# Ẩn các thành phần không cần thiết
+gatherUsageStats = false
+
+[ui]
+# Ẩn "Made with Streamlit" footer
+hideTopBar = false
+hideSidebarNav = false
